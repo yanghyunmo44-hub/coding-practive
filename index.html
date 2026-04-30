@@ -1,14 +1,22 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>비밀번호 유출 확인</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <main>
+    <h1>비밀번호가 유출되었나요?</h1>
+    <p>아래에 비밀번호를 입력하여 데이터 유출 사고에 포함되었는지 확인하세요.</p>
+    <form id="password-checker-form">
+      <input type="password" id="password-input" placeholder="비밀번호를 입력하세요" required>
+      <button type="submit">확인하기</button>
+    </form>
+    <p class="security-notice">🔒 입력하신 비밀번호는 절대 전송되지 않으며, 모든 확인 과정은 브라우저 내에서 안전하게 처리됩니다.</p>
+    <div id="result-container"></div>
+  </main>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
