@@ -11,7 +11,7 @@ var disqus_config = function () {
 
 function loadDisqus() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://coding-practive.disqus.com/embed.js';
+    s.src = 'https://https-yanghyunmo44-hub-github-io-coding-practive.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
 }
