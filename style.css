@@ -241,3 +241,23 @@ button[type="submit"]:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
+
+/* Comments Section Styles */
+.comments-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 728px;
+  width: 90%;
+  backdrop-filter: blur(10px);
+}
+
+.comments-section h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}

@@ -3,16 +3,43 @@ const passwordInput = document.getElementById('password-input');
 const resultContainer = document.getElementById('result-container');
 const themeToggle = document.getElementById('theme-toggle');
 
+// --- Disqus Configuration ---
+var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = window.location.pathname;
+};
+
+function loadDisqus() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://coding-practive.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+}
+
 // --- Theme Logic ---
 const currentTheme = localStorage.getItem('theme') || 'dark';
 if (currentTheme === 'light') {
   document.body.classList.add('light-mode');
 }
 
+// Initial Disqus Load
+loadDisqus();
+
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('light-mode');
   const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
   localStorage.setItem('theme', theme);
+  
+  // Reset Disqus for theme change if it exists
+  if (typeof DISQUS !== 'undefined') {
+    DISQUS.reset({
+      reload: true,
+      config: function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.pathname;
+      }
+    });
+  }
 });
 
 // --- Password Check Logic ---
