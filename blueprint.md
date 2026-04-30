@@ -1,32 +1,39 @@
-# Blueprint: Password Leak Checker
+# Blueprint: Password Leak Checker (AdSense Optimized)
 
 ## Overview
 
-This project is a simple web application that allows users to check if their password has been compromised in a data breach. It uses the "Have I Been Pwned" (HIBP) API to securely check for password leaks without exposing the password itself.
+This project is a high-quality web application designed to help users check password compromises while providing educational content on cyber security. It is optimized for Google AdSense approval by focusing on original content, clear navigation, and professional UX.
 
 ## Features
 
-*   **Password Input:** A secure input field for users to enter the password they want to check.
-*   **Secure Checking:** The password is not sent to any server. Instead, it is hashed locally in the browser using the SHA-1 algorithm. Only the first 5 characters of the hash are sent to the HIBP API.
-*   **Result Display:** The application will display a clear message indicating whether the password has been found in any known data breaches.
-*   **Theme Toggle:** A button to switch between Dark Mode and Light Mode, with user preference saved in local storage.
-*   **Ad Placement:** Dedicated areas (placeholders) for banner or text ads at the top and bottom of the main content.
+*   **Secure Password Checker:** Local SHA-1 hashing, HIBP API integration.
+*   **Theme Toggle:** Dark/Light mode persistence.
+*   **AdSense Ready Layout:** Optimized ad slots (Top, Mid, Bottom, Sidebar).
+*   **Content Richness:** 
+    *   **Security Blog/Tips:** Detailed articles on creating strong passwords.
+    *   **FAQ Section:** Common questions about password security.
+*   **Navigation & Structure:** Professional header and footer with essential links.
+*   **Compliance:** Placeholders for Privacy Policy, Terms of Service, and Contact info.
 
-## Design
+## Design Strategy (High-Quality Standards)
 
-*   **Layout:** A clean and simple single-page layout with a clear heading, an input field, a button, and a result area.
-*   **Theme Management:** Use CSS variables to manage colors for both Dark and Light modes.
-*   **Ad Sections:** Stylized placeholders for advertisements that blend with the theme but remain distinct.
-*   **Responsiveness:** The layout will be responsive and work well on both desktop and mobile devices.
+1.  **Professional Typography:** Use expressive and readable fonts with clear hierarchy.
+2.  **Visual Depth:** Use multi-layered shadows and subtle textures for a premium feel.
+3.  **Content-First Layout:** Ensure text content is prominent and well-structured, not just a single tool.
+4.  **Interactive Elements:** Elegant buttons, hover effects, and smooth transitions.
+5.  **Mobile First:** 100% responsive design across all devices.
 
-## Current Plan
+## Current Plan (AdSense Optimization Phase)
 
 1.  **Modify `index.html`:**
-    *   Add a theme toggle button in the header or top corner.
-    *   Add ad placeholder containers (e.g., `#top-ad`, `#bottom-ad`).
+    *   Add a Navigation Header.
+    *   Insert a "Security Guide" section with educational text.
+    *   Add an FAQ section.
+    *   Add a Footer with essential links.
 2.  **Modify `style.css`:**
-    *   Refactor color styles to use CSS variables defined in `:root` and a `.light-mode` class.
-    *   Style the theme toggle button and ad placeholders.
+    *   Refine overall aesthetics (spacing, shadows, color concentrations).
+    *   Style new sections (Nav, Guide, FAQ, Footer).
+    *   Enhance "High-End" tactile feel with subtle noise textures.
 3.  **Modify `main.js`:**
-    *   Add theme switching logic.
-    *   Save and load the theme preference from `localStorage`.
+    *   Update logic to handle any new interactive components.
+    *   Ensure smooth UX for the added content sections.
