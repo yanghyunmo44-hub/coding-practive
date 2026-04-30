@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - SafeCheck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href='style.css' rel='stylesheet'>
+</head>
+<body class="sub-page">
+  <header>
+    <nav>
+      <a href="index.html" class="logo">🛡️ SafeCheck</a>
+      <ul class="nav-links">
+        <li><a href="index.html">도구</a></li>
+        <li><a href="guide.html">보안 가이드</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="partnership.html">제휴 문의</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌓 테마 변경</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="ad-placeholder">광고 영역 (상단 배너)</div>
+
+    <section class="info-section">
+      <h1>❓ 자주 묻는 질문 (FAQ)</h1>
+      <p class="lead" style="text-align: center; margin-bottom: 3rem;">SafeCheck 서비스 이용과 보안에 대해 궁금한 점을 확인하세요.</p>
+      
+      <div class="grid">
+        <div class="card">
+          <h3>정말 비밀번호를 서버로 전송하지 않나요?</h3>
+          <p>네, 맞습니다. SafeCheck는 k-Anonymity라는 보안 모델을 사용합니다. 입력하신 비밀번호는 브라우저 내에서 SHA-1 해시로 변환된 후, 그 해시값의 앞 5글자만 API 서버에 보냅니다. 이 5글자만으로는 원래 비밀번호가 무엇인지 절대 알 수 없습니다.</p>
+        </div>
+        <div class="card">
+          <h3>비밀번호가 유출되었다고 나오면 어떻게 하나요?</h3>
+          <p>해당 비밀번호를 사용하는 모든 사이트에서 즉시 비밀번호를 변경해야 합니다. 또한, 가능한 경우 모든 계정에 2단계 인증(2FA)을 설정하는 것이 가장 안전합니다.</p>
+        </div>
+        <div class="card">
+          <h3>이 서비스는 무료인가요?</h3>
+          <p>네, SafeCheck의 모든 보안 확인 도구와 가이드는 무료로 제공됩니다. 저희는 광고와 파트너십 제휴를 통해 서비스를 유지하고 있습니다.</p>
+        </div>
+        <div class="card">
+          <h3>유출 목록은 얼마나 자주 업데이트되나요?</h3>
+          <p>저희가 사용하는 Have I Been Pwned API는 전 세계에서 발생하는 새로운 데이터 유출 사고를 실시간에 가깝게 수집하여 데이터베이스를 업데이트합니다.</p>
+        </div>
+        <div class="card">
+          <h3>비밀번호 확인 외에 다른 기능도 있나요?</h3>
+          <p>현재는 비밀번호 유출 확인에 집중하고 있으며, 향후 비밀번호 생성기 및 이메일 유출 확인 기능도 추가할 계획입니다.</p>
+        </div>
+        <div class="card">
+          <h3>기업용 제휴도 가능한가요?</h3>
+          <p>네, 서비스 통합이나 대량 확인 등의 기업용 솔루션 문의는 '제휴 문의' 페이지를 통해 연락 주시면 상세히 답변해 드리겠습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-placeholder">광고 영역 (하단 배너)</div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>SafeCheck</h4>
+        <p>당신의 온라인 안전을 위한 첫 걸음, SafeCheck와 함께하세요.</p>
+      </div>
+      <div class="footer-section">
+        <h4>바로가기</h4>
+        <ul>
+          <li><a href="index.html">비밀번호 확인</a></li>
+          <li><a href="guide.html">보안 가이드</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="partnership.html">제휴 문의</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>법적 고지</h4>
+        <ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 SafeCheck. All rights reserved.
+    </div>
+  </footer>
+
+  <script defer type="text/javascript" src="main.js"></script>
+</body>
+</html>
