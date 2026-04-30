@@ -1,7 +1,21 @@
 const form = document.getElementById('password-checker-form');
 const passwordInput = document.getElementById('password-input');
 const resultContainer = document.getElementById('result-container');
+const themeToggle = document.getElementById('theme-toggle');
 
+// --- Theme Logic ---
+const currentTheme = localStorage.getItem('theme') || 'dark';
+if (currentTheme === 'light') {
+  document.body.classList.add('light-mode');
+}
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+  const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+  localStorage.setItem('theme', theme);
+});
+
+// --- Password Check Logic ---
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const password = passwordInput.value;
