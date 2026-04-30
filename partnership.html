@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeCheck - 제휴 및 비즈니스 문의</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href='style.css' rel='stylesheet'>
+</head>
+<body class="sub-page">
+  <header>
+    <nav>
+      <a href="index.html" class="logo">🛡️ SafeCheck</a>
+      <ul class="nav-links">
+        <li><a href="index.html#checker">도구</a></li>
+        <li><a href="index.html#guide">보안 가이드</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="partnership.html" class="active">제휴 문의</a></li>
+        <li><button id="theme-toggle" class="theme-toggle">🌓 테마 변경</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="ad-placeholder">광고 영역 (상단 배너)</div>
+
+    <section class="partnership-section" id="contact">
+      <h2>🤝 제휴 및 비즈니스 문의</h2>
+      <p class="lead" style="text-align: center; margin-bottom: 2rem;">SafeCheck와 함께 보안 생태계를 넓혀갈 파트너를 찾습니다.</p>
+      
+      <form id="partnership-form" action="https://formspree.io/f/mjglbzer" method="POST">
+        <div class="form-group">
+          <label for="name">성함 또는 기업명</label>
+          <input type="text" id="name" name="name" placeholder="문의하시는 분의 성함을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="email">회신받을 이메일</label>
+          <input type="email" id="email" name="_replyto" placeholder="example@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">문의 상세 내용</label>
+          <textarea id="message" name="message" placeholder="제휴 제안이나 기술 문의 내용을 상세히 적어주세요" required style="min-height: 200px;"></textarea>
+        </div>
+        <button type="submit" class="submit-btn" style="width: 100%; margin-top: 1rem;">제휴 문의 보내기</button>
+      </form>
+    </section>
+
+    <div class="ad-placeholder">광고 영역 (하단 배너)</div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>SafeCheck</h4>
+        <p>당신의 온라인 안전을 위한 첫 걸음, SafeCheck와 함께하세요.</p>
+      </div>
+      <div class="footer-section">
+        <h4>바로가기</h4>
+        <ul>
+          <li><a href="index.html#checker">비밀번호 확인</a></li>
+          <li><a href="index.html#guide">보안 가이드</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>법적 고지</h4>
+        <ul>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">쿠키 정책</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2026 SafeCheck. All rights reserved.
+    </div>
+  </footer>
+
+  <script defer type="text/javascript" src="main.js"></script>
+</body>
+</html>
