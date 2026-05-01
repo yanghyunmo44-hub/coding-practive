@@ -8,6 +8,7 @@ This project is a high-quality web application designed to help users check pass
 
 *   **Secure Password Checker:** Local SHA-1 hashing, HIBP API integration.
 *   **Theme Toggle:** Dark/Light mode persistence.
+*   **Google Analytics Integration:** Tracking user engagement with gtag.js.
 *   **AdSense Ready Layout:** Optimized ad slots (Top, Mid, Bottom, Sidebar).
 *   **Content Richness:** 
     *   **Security Blog/Tips:** Detailed articles on creating strong passwords.
@@ -23,17 +24,12 @@ This project is a high-quality web application designed to help users check pass
 4.  **Interactive Elements:** Elegant buttons, hover effects, and smooth transitions.
 5.  **Mobile First:** 100% responsive design across all devices.
 
-## Current Plan (AdSense Optimization Phase)
+## Current Plan (Blogger Theme Integration & Fix)
 
-1.  **Modify `index.html`:**
-    *   Add a Navigation Header.
-    *   Insert a "Security Guide" section with educational text.
-    *   Add an FAQ section.
-    *   Add a Footer with essential links.
-2.  **Modify `style.css`:**
-    *   Refine overall aesthetics (spacing, shadows, color concentrations).
-    *   Style new sections (Nav, Guide, FAQ, Footer).
-    *   Enhance "High-End" tactile feel with subtle noise textures.
-3.  **Modify `main.js`:**
-    *   Update logic to handle any new interactive components.
-    *   Ensure smooth UX for the added content sections.
+1.  **Modify `blogger-theme.xml`:**
+    *   Reconstruct the corrupted file with a valid Blogger XML structure.
+    *   Add `<b:all-head-content/>` to the `<head>` section.
+    *   Add a `<b:section>` tag at the beginning of the `<body>`.
+    *   Include the Google Analytics tag in the `<head>`.
+2.  **Update HTML Files:**
+    *   Add Google Analytics tag to `index.html`, `guide.html`, `faq.html`, and `partnership.html`.
